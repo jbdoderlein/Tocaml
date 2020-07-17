@@ -30,6 +30,12 @@
     </script>
   </head>
   <body>
+  	<div class="fixed-action-btn direction-top active" style="bottom: 15px; right: 15px;">
+       <a class="btn-floating btn-small waves-effect waves-light teal darken-4"><i class="material-icons">play_arrow</i></a>
+       <a class="btn-floating btn-small waves-effect waves-light teal darken-4"><i class="material-icons">insert_drive_file</i></a>
+       <a class="btn-floating btn-small waves-effect waves-light teal darken-4"><i class="material-icons">save</i></a>
+       <a class="btn-floating btn-small waves-effect waves-light teal darken-4"><i class="material-icons">file_upload</i></a>
+    </div>
 
 <div class="container horizontal">
 
@@ -56,7 +62,7 @@
     <div id="box_2" class="box">
     	<textarea name="code" id="texarea3" class="materialize-textarea" ></textarea>
         <script type="text/javascript">
-           editor(document.getElementById('texarea3'), false, true)
+           editor(document.getElementById('texarea3'), false, false)
          </script>
     </div>
 

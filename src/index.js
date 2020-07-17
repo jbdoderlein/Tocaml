@@ -12,6 +12,7 @@ const createWindow = () => {
     width: 1000,
     height: 700,
     titleBarStyle: 'hidden',
+    border: false,
     icon: __dirname + '/icon.png'
   });
 

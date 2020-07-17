@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tocaml</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/addon/edit/matchbrackets.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.26.0/addon/edit/closebrackets.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.55.0/keymap/sublime.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.55.0/mode/mllike/mllike.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.55.0/theme/material.min.css" />
+    <script type="text/javascript">
+    	function editor(id,read, line)
+{
+    CodeMirror.fromTextArea(id, {
+                    lineNumbers: line,
+                    autoCloseBrackets: true,
+      				keyMap : 'sublime',
+                    indentUnit: 4,
+                    matchBrackets: true,
+                    readOnly: read,
+                    theme : 'material',
+                    mode : 'text/x-ocaml'
+                });
+}
+    </script>
+  </head>
+
+  <nav>
+    <div class="nav-wrapper">
+    <a href="#" class="brand-logo">Tocaml</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="btn-floating btn-small waves-effect waves-light teal darken-4"><i class="material-icons">play_arrow</i></a></li>
+        <li><a class="btn-floating btn-small waves-effect waves-light teal darken-4"><i class="material-icons">insert_drive_file</i></a></li>
+       	<li><a class="btn-floating btn-small waves-effect waves-light teal darken-4"><i class="material-icons">save</i></a></li>
+       	<li><a class="btn-floating btn-small waves-effect waves-light teal darken-4"><i class="material-icons">add</i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <body>
+  <div class="row">
+    <div class="col s12 m6">
+    	<textarea name="code" id="texarea1" class="materialize-textarea" ></textarea>
+        <script type="text/javascript">
+           editor(document.getElementById('texarea1'), false, true)
+         </script>
+    </div>
+    <div class="col s12 m6">
+        <textarea name="code" id="texarea2" class="materialize-textarea" ></textarea>
+        <script type="text/javascript">
+           editor(document.getElementById('texarea2'), true, true)
+         </script>
+
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,25 @@
+body{
+	background-color: #202b30 !important;
+}
+
+nav {
+	background-color: #202b30 !important;
+	height: 50px !important;
+	line-height: 50px !important;
+}
+
+nav .brand-logo {
+	padding-left: 1rem !important;
+}
+
+nav i, nav i.material-icons {
+	font-size: 18px !important;
+}
+
+.row .col {
+padding: 0 .10rem !important;
+}
+
+.CodeMirror {
+	height: 30rem !important;
+}
